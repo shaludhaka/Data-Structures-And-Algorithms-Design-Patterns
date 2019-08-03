@@ -6,10 +6,9 @@ public class JvmClassObject {
 
     }
 
-    class JvmTest{
+    class JvmTest {
         private String fields;
         private String methods;
-
 
 
     }

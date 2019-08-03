@@ -4,7 +4,8 @@ public abstract class Duck {
 
     IFlyBehaviour flyBehaviour;
     IQuackBehaviour quackBehaviour;
-    public Duck(){
+
+    public Duck() {
 
     }
 
@@ -12,17 +13,17 @@ public abstract class Duck {
     public abstract void display();
 
 
-    public void swim(){
+    public void swim() {
         System.out.println("All can swim");
     }
 
 
-    public void performFly(){
+    public void performFly() {
         flyBehaviour.fly();
     }
 
 
-    public void performQuack(){
+    public void performQuack() {
         quackBehaviour.quack();
     }
 

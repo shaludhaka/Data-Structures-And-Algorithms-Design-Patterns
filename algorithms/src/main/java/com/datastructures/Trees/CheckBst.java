@@ -10,30 +10,30 @@ public class CheckBst {
         Node left;
         Node right;
 
-        public Node(int data){
+        public Node(int data) {
             this.data = data;
-            left=right=null;
+            left = right = null;
         }
 
     }
 
-    public boolean  checkBst(){
+    public boolean checkBst() {
 
         int min = Integer.MIN_VALUE;
         int max = Integer.MAX_VALUE;
         return checkBstHelper(root, min, max);
     }
 
-    public boolean  checkBstHelper(Node node, int min, int max){
+    public boolean checkBstHelper(Node node, int min, int max) {
 
-        if (node == null){
+        if (node == null) {
             return true;
         }
 
-        if(node.data>max || node.data < min){
+        if (node.data > max || node.data < min) {
             return false;
         }
-        return checkBstHelper(node.left,min, node.data ) && checkBstHelper(node.right, node.data, max);
+        return checkBstHelper(node.left, min, node.data) && checkBstHelper(node.right, node.data, max);
     }
 
     public static void main(String[] args) {
@@ -45,9 +45,9 @@ public class CheckBst {
         tree.root.left.left = new Node(1);
         tree.root.left.right = new Node(3);
 
-        if(tree.checkBst()){
+        if (tree.checkBst()) {
             System.out.println("is bst");
-        }else {
+        } else {
             System.out.println("not a bst");
 
         }

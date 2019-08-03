@@ -19,6 +19,5 @@ public class MiniDuckSimulator {
         model.performFly();
 
 
-
     }
 }
