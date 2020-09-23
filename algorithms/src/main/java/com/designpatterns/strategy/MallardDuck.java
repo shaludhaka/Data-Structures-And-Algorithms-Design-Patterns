@@ -1,6 +1,6 @@
 package com.designpatterns.strategy;
 
-public class MallardDuck extends Duck{
+public class MallardDuck extends Duck {
 
 
     public MallardDuck(){
